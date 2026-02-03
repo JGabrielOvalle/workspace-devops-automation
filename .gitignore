@@ -1,0 +1,19 @@
+# Exceto arquivos e pastas que queremos manter
+!.gitignore
+!infra/
+!ansible/
+!.github/
+!README.md
+
+# Ignora arquivos temporários e logs
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Ansible inventory gerado na pipeline
+inventory
+
+
+infra/.terraform/
+infra/.terraform.lock.hcl
